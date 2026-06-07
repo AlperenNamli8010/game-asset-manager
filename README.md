@@ -9,7 +9,7 @@ Bağımsız oyun geliştiricilerinin (Indie Developers) projelerinde kullandıkl
 * Mobil Uyumlu Modern Arayüz (Bootstrap 5)
 * Yalın PHP ve PDO ile güvenli veritabanı işlemleri (SQL Injection koruması)
 
-## 📸 Ekran Görüntüleri
+Ekran Görüntüleri
 --GİRİŞ EKRANI--
 <img width="1917" height="863" alt="image" src="https://github.com/user-attachments/assets/8f007ee7-1e63-4e13-9aeb-b8918578a072" />
 --KAYIT OL EKRANI--
@@ -23,11 +23,11 @@ Bağımsız oyun geliştiricilerinin (Indie Developers) projelerinde kullandıkl
 --YÜKLENEN ASSETLERİ KONTROL ETME(SİLME DÜZELTME)--
 <img width="1917" height="866" alt="image" src="https://github.com/user-attachments/assets/c5a45dbf-3bb7-4910-a699-864dcac00a6c" />
 
-## 🎥 Proje Tanıtım Videosu
-Projenin kod yapısını ve canlı sunucudaki çalışma mantığını anlattığım tanıtım videosuna aşağıdan ulaşabilirsiniz:
-* **Video Linki:** [YouTube veya Google Drive Linkinizi Buraya Yapıştırın]
+Proje Tanıtım Videosu
 
-## 🛠️ Kullanılan Teknolojiler
+Video Linki:** [YouTube veya Google Drive Linkinizi Buraya Yapıştırın]
+
+Kullanılan Teknolojiler
 * **Backend:** PHP 8 (Yalın PHP, PDO)
 * **Frontend:** HTML5, CSS3, Bootstrap 5
 * **Veritabanı:** MySQL / MariaDB
