@@ -120,6 +120,31 @@ require_once 'includes/footer.php';
 ?>
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2. Çıkış Sayfası (logout.php)
+Kullanıcının oturumunu sonlandırmak (Session'ı yok etmek) için gereken dosyadır. Ana proje klasöründe logout.php adında bir dosya oluştur ve sadece şu kodları yapıştır (Bu dosyada HTML'e ihtiyacımız yok):
+
+PHP
+<?php
+session_start();
+// Tüm session değişkenlerini temizle
+$_SESSION = array();
+
+// Session'ı tamamen yok et
+session_destroy();
+
+// Çıkış yaptıktan sonra giriş sayfasına yönlendir
+header("Location: login.php");
+exit;
+?>
+Ne Yaptık ve Nasıl Test Edeceksin?
+Kayıt olduğun kullanıcı adı ve şifre ile http://localhost/game-asset-manager/login.php üzerinden giriş yapmayı dene.
+
+Başarılı olursan, sistem seni otomatik olarak veriler.php sayfasına yönlendirecek. (Şu an o dosya olmadığı için tarayıcıda "Dosya bulunamadı - 404" hatası alman gayet normal, bu yönlendirmenin doğru çalıştığını gösterir).
+
+Sayfanın en üstündeki menünün değiştiğini, "Kayıt Ol" yerine "Varlıklarım", "Yeni Ekle" ve "Çıkış Yap" butonlarının geldiğini göreceksin (Oturum kontrolü başarıyla çalışıyor demektir).
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 3. Alt Kısım Şablonu (includes/footer.php)
 Açtığımız HTML etiketlerini kapatacağımız ve Bootstrap'in JavaScript kütüphanesini ekleyeceğimiz yer burası.
 
