@@ -25,7 +25,7 @@ Ekran Görüntüleri
 
 Proje Tanıtım Videosu
 
-Video Linki:** [YouTube veya Google Drive Linkinizi Buraya Yapıştırın]
+Video Linki: https://www.youtube.com/watch?v=0_ij7E4yGFM
 
 Kullanılan Teknolojiler
 * **Backend:** PHP 8 (Yalın PHP, PDO)
