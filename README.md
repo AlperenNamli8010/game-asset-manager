@@ -10,7 +10,7 @@ Bağımsız oyun geliştiricilerinin (Indie Developers) projelerinde kullandıkl
 * Yalın PHP ve PDO ile güvenli veritabanı işlemleri (SQL Injection koruması)
 
 ## 📸 Ekran Görüntüleri
---GİRİŞ EKRANI -
+--GİRİŞ EKRANI--
 <img width="1917" height="863" alt="image" src="https://github.com/user-attachments/assets/8f007ee7-1e63-4e13-9aeb-b8918578a072" />
 --KAYIT OL EKRANI--
 <img width="1913" height="863" alt="image" src="https://github.com/user-attachments/assets/5f6283b6-2d3d-43ab-9226-19777561cfc0" />
