@@ -27,29 +27,29 @@ Here are your hosting informations:
 
 Personal
 
-Secret Code: CjX05GTeQmhI
+Secret Code:****************************
 
-Student Number: 23360859074
+Student Number: ***********************
 
 FTP
 
-IP/Host: 95.130.171.20
+IP/Host: **********************
 
-FTP Port: 21
+FTP Port: **********************************
 
-Linux Username: st23360859074
+Linux Username: ******************
 
-Linux Password: bZOhn93injOc
+Linux Password: *********************
 
 Your website: http://95.130.171.20/~st23360859074
 
 MariaDB (MySQL)
 
-Database User: dbusr23360859074
+Database User:*******************
 
-Database Password: CO03UeioFVTc
+Database Password: *************
 
-Database Name: dbstorage23360859074
+Database Name: *******************************
 
 phpMyAdmin: http://95.130.171.20/phpmyadmin 
 
@@ -73,3 +73,31 @@ Kullanıcı Adı: dbusr23360859074
 Giriş yaptıktan sonra sol tarafta sana tahsis edilen dbstorage23360859074 isimli veritabanını göreceksin. Ona tıkla.
 
 Üst menüden İçe Aktar (Import) butonuna bas, bilgisayarına indirdiğin .sql dosyasını seçip yükle. Tabloların başarıyla sunucuya taşındı!
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Dosyaları İnternete Yükleme (FTP)
+FTP (File Transfer Protocol) bilgileri, kod dosyalarını sunucuya atman içindir. Bunun için ücretsiz ve güvenilir bir FTP programı olan FileZilla'yı kullanacağız.
+
+İnternetten FileZilla programını indirip bilgisayarına kur.
+
+Programı açtığında en üstte bir hızlı bağlanma çubuğu göreceksin. Oraya şu bilgilerini gir:
+
+Sunucu (Host): ***************************
+
+Kullanıcı Adı:*******************
+
+Parola:****************************
+
+Kapı (Port): *************************
+
+Hızlı Bağlan butonuna bas. Program üniversite sunucusuna bağlanacak.
+
+Programın sağ alt penceresinde sunucudaki klasörleri göreceksin. Orada public_html (veya www) isimli bir klasör vardır, onun içine çift tıklayıp gir.
+
+Programın sol alt penceresinden ise kendi bilgisayarındaki projeyi bul.
+
+Klasörün içindeki tüm dosyaları (index.php, config klasörü, includes klasörü, AI.md vs.) seç ve sürükleyerek sağ taraftaki public_html klasörünün içine bırak.
+
+Dosya aktarımı (aşağıdaki çubukta yeşil olarak ilerler) bittiğinde işlemin tamamdır!
+
+Artık kendi sitene http://95.130.171.20/~st23360859074 adresinden girebilir, projeni test edebilir ve videonu rahatça çekebilirsin.
