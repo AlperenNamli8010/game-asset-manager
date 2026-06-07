@@ -102,12 +102,19 @@ Dosya aktarımı (aşağıdaki çubukta yeşil olarak ilerler) bittiğinde işle
 
 Artık kendi sitene http://95.130.171.20/~st23360859074 adresinden girebilir, projeni test edebilir ve videonu rahatça çekebilirsin.
 ------------------------------------------------------------------------------------------------------------------------------------
+login.php yi yukarıya yazınca http://localhost/game-asset-manager/veriler.php buraya atıyor orada da Not Found
+
+The requested URL was not found on this server.
+
+Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12 Server at localhost Port 80 var
+
 Şimdi yapman gereken tek şey şu:
 Klasöründe veri-ekle.php kalsın, ona hiç dokunma.
 
 Klasörün içine veriler.php adında YENİ bir dosya daha oluştur.
 
 Aşağıdaki kodları kopyala ve bu yeni oluşturduğun veriler.php dosyasının içine yapıştırıp kaydet (Ctrl + S):
+
 
 PHP
 <?php
