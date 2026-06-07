@@ -1,3 +1,93 @@
+Konu Seçimi ve Veritabanı Tasarımı
+İnternette kopyası çok bulunmayan, hem hocanın listesindeki özgün maddelere yakın hem de üzerinde çalışması keyifli bir konu seçmeliyiz.
+
+Sana özel, kurallara tamamen uyan ve geliştirilmesi keyifli 3 konu önerisi:
+
+Veteriner Eczane Stok ve Reçete Takip Sistemi: (Veterinerlerin kliniklerinde bulunan ilaçları, son kullanma tarihlerini, stok miktarlarını ve hangi hayvana hangi ilacın yazıldığını takip ettiği bir sistem).
+
+Yerel Tohum ve Takas Bankası Uygulaması: (Geleneksel/organik tarımla uğraşanların ellerindeki ata tohumlarını sisteme girdiği, miktarını, yetiştirme koşullarını yazdığı ve diğer üyelerle takas talebi oluşturabildiği bir platform).
+
+Bağımsız Oyun Geliştiricileri (Indie Game) Varlık (Asset) Yönetimi: (Küçük oyun ekiplerinin projelerinde kullandıkları ses, 3D model, script veya görselleri, formatları ve lisans tipleriyle birlikte listeleyip yönettiği bir iç sistem).
+
+Soru: Bu konulardan hangisi daha çok ilgini çeker? Ya da aklında tamamen farklı, kendine ait spesifik bir fikir var mı? Konuyu netleştirelim, veritabanı tablolarını (users ve bilgiler tablosu) ona göre tasarlayalım.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Üst Kısım ve Menü Şablonu (includes/header.php)
+Proje kurallarında oturum yönetimi (session) istendiği ve arayüzün tamamen stillendirilmiş olması gerektiği belirtilmişti. header.php dosyasının en başına session_start() ekleyerek tüm projede oturum kontrolünü tek noktadan başlatmış olacağız. Ayrıca giriş yapmış kullanıcı ile yapmamış kullanıcıya farklı menüler göstereceğiz.
+
+includes klasörünün içinde header.php adında bir dosya oluştur ve içine şu kodları yapıştır:
+
+PHP
+<?php
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+?>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indie Asset Manager</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { background-color: #f8f9fa; }
+        .navbar-brand { font-weight: bold; letter-spacing: 1px; }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4 shadow">
+    <div class="container">
+        <a class="navbar-brand" href="index.php"><i class="fa-solid fa-gamepad me-2"></i>AssetManager</a>
+        <button class="navbar-expand-lg navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <?php if (isset($_SESSION['user_id'])): ?>
+                    <li class="nav-item">
+                        <a class="nav-link" href="veriler.php"><i class="fa-solid fa-box-open me-1"></i> Varlıklarım</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="veri-ekle.php"><i class="fa-solid fa-plus me-1"></i> Yeni Ekle</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-outline-danger btn-sm mt-1" href="logout.php"><i class="fa-solid fa-right-from-bracket me-1"></i> Çıkış Yap</a>
+                    </li>
+                <?php else: ?>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.php"><i class="fa-solid fa-right-to-bracket me-1"></i> Giriş Yap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.php"><i class="fa-solid fa-user-plus me-1"></i> Kayıt Ol</a>
+                    </li>
+                <?php endif; ?>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+3. Alt Kısım Şablonu (includes/footer.php)
+Açtığımız HTML etiketlerini kapatacağımız ve Bootstrap'in JavaScript kütüphanesini ekleyeceğimiz yer burası.
+
+includes klasörünün içinde footer.php adında bir dosya oluştur ve içine şu kodları yapıştır:
+
+PHP
+</div> <footer class="footer mt-5 py-3 bg-white border-top text-center text-muted">
+    <div class="container">
+        <span>&copy; <?php echo date('Y'); ?> - Indie Game Asset Manager - Tüm Hakları Saklıdır.</span>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+-----------------------------------------------------------------
 1. Veritabanı Bağlantı Dosyası (config/db.php)
 Bu dosya, PHP'nin veritabanıyla konuşmasını sağlayacak. Güvenli ve modern bir yöntem olan PDO (PHP Data Objects) kullanacağız.
 
