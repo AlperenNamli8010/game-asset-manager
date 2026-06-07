@@ -10,17 +10,17 @@ Bağımsız oyun geliştiricilerinin (Indie Developers) projelerinde kullandıkl
 * Yalın PHP ve PDO ile güvenli veritabanı işlemleri (SQL Injection koruması)
 
 ## 📸 Ekran Görüntüleri
---giriş ekranı--
+--GİRİŞ EKRANI -
 <img width="1917" height="863" alt="image" src="https://github.com/user-attachments/assets/8f007ee7-1e63-4e13-9aeb-b8918578a072" />
---kayıt ol ekranı--
+--KAYIT OL EKRANI--
 <img width="1913" height="863" alt="image" src="https://github.com/user-attachments/assets/5f6283b6-2d3d-43ab-9226-19777561cfc0" />
---giriş yap ekranı--
+--GİRİŞ YAP EKRANI--
 <img width="1915" height="863" alt="image" src="https://github.com/user-attachments/assets/0d68c24c-82b7-462d-8b1f-a49f4e74bfbd" />
---assetleri yönetme işleminin yapılacağı kütüphane--
+--ASSETLERİ YÖNETME İŞLEMİNİN YAPILACAĞI KÜTÜPHANE--
 <img width="1915" height="876" alt="image" src="https://github.com/user-attachments/assets/2035d8fd-531a-443a-9992-d8ddc407f971" />
---assetleri yükleme işleminin yapılacağı yer--
+--ASSETLERİ YÜKLEME İŞLEMİNİN YAPILACAĞI YER--
 <img width="1917" height="863" alt="image" src="https://github.com/user-attachments/assets/1b5506a9-6196-468e-8910-5f6d8fa7f0a7" />
---yüklenen assetleri kontrol etme(silme düzenleme)--
+--YÜKLENEN ASSETLERİ KONTROL ETME(SİLME DÜZELTME)--
 <img width="1917" height="866" alt="image" src="https://github.com/user-attachments/assets/c5a45dbf-3bb7-4910-a699-864dcac00a6c" />
 
 ## 🎥 Proje Tanıtım Videosu
