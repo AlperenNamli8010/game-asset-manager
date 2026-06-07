@@ -26,6 +26,7 @@ Ekran Görüntüleri
 Proje Tanıtım Videosu
 
 Video Linki: https://www.youtube.com/watch?v=0_ij7E4yGFM
+Website adresi: http://95.130.171.20/~st23360859074/ 
 
 Kullanılan Teknolojiler
 * **Backend:** PHP 8 (Yalın PHP, PDO)
